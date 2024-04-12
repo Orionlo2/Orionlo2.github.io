@@ -1,0 +1,76 @@
+p{
+  color:rgb(0, 0, 0);
+  text-decoration:none;
+  font-family:url('PixelatedTimesNewRoman.woff2');
+}
+a:link{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+a:visited{  
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+a:hover{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+a:active{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+body{
+  background-image: url('24641.png');
+background-position-y: 7.5cm  ;
+background-position-x: 16cm ;
+background-repeat: no-repeat;
+}
+
+/* Styling for the sidebar */
+.sidebar {
+  width: 250px; /* Adjust as needed */
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the sidebar image */
+.sidebar img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Styling for the sidebar content (text) */
+.sidebar-content {
+  text-align: center;
+}
+
+/* Styling for the main content area */
+.main-content {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 280px; /* Ensure it's enough to clear the sidebar */
+}
+
+
+To add a custom font in a .ttf (TrueType Font) format to your CSS file and use it on your website, you'll need to follow these steps:
+
+1. Convert Font to Web Formats (Optional)
+Before adding the font to your CSS, it's recommended to convert your TrueType Font (.ttf) file to web-compatible font formats (like .woff and .woff2) for better cross-browser compatibility and performance. You can use online tools like Font Squirrel or Transfonter to convert your font file.
+
+2. Upload Font Files to Your Web Server
+Upload the converted font files (e.g., .woff and .woff2) to your web server or include them within your project directory.
+
+3. Define @font-face Rule in CSS
+Use the @font-face rule in your CSS file to define the custom font and specify its source files. Here's an example:
+
+@font-face {
+    font-family: 'pixelatedtimesnewroman'; /* Name of your custom font */
+    src: url('') format('woff2'), /* URL to .woff2 font file */
+         url('') format('woff'); /* URL to .woff font file */
+    font-weight: normal;
+    font-style: normal;
+}
